@@ -1,14 +1,10 @@
-import { VLM } from './app'
 import {
   VLMVideo,
-  VLMImage,
   VLMSound,
-  VLMWidget,
   QuickVideoScreen,
   QuickImage,
   QuickSound,
   QuickMesh,
-  VLMMesh,
   QuickNull,
   QuickNullConfig,
   QuickVideoConfig,
@@ -21,21 +17,13 @@ import 'xmlhttprequest-polyfill'
 // @ts-ignore
 import { URL } from 'whatwg-url-without-unicode'
 import { QuickDanceFloor, QuickDanceFloorConfig } from './components/VLMDanceFloor.component'
-import { ReactEcsRenderer } from './services/UI.service'
 
 // @ts-ignore
 globalThis['URL'] = URL
 
 interface VideoConfig extends VLMVideo.Config {}
-interface VideoInstanceConfig extends VLMVideo.Instance {}
-interface ImageConfig extends VLMImage.Config {}
-interface ImageInstanceConfig extends VLMImage.Instance {}
-interface MeshConfig extends VLMMesh.Config {}
-interface MeshInstanceConfig extends VLMMesh.Instance {}
 interface SoundConfig extends VLMSound.Config {}
-interface SoundInstanceConfig extends VLMSound.Instance {}
-interface WidgetConfig extends VLMWidget.Config {}
-namespace QuickCreator {
+namespace QuickCreate {
   export class SceneParent extends QuickNull {
     constructor(config: QuickNullConfig) {
       super(config)
@@ -77,18 +65,9 @@ namespace QuickCreator {
   }
 }
 
-export default VLM
+export default QuickCreate
 export {
-  VLM,
-  ReactEcsRenderer,
-  QuickCreator,
+  QuickCreate,
   VideoConfig,
-  VideoInstanceConfig,
-  ImageConfig,
-  ImageInstanceConfig,
-  MeshConfig,
-  MeshInstanceConfig,
   SoundConfig,
-  SoundInstanceConfig,
-  WidgetConfig,
 }

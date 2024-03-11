@@ -1,7 +1,7 @@
 {
-  "name": "vlm-dcl",
-  "version": "1.0.0-alpha.24",
-  "description": "Virtual Land Manager for Decentraland SDK7",
+  "name": "vlm-dcl-qc",
+  "version": "0.0.1",
+  "description": "QuickCreate for Decentraland SDK7 - Developed by Virtual Land Manager",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -23,7 +23,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/virtuallandmanager/vlm-dcl"
+    "url": "git+https://github.com/virtuallandmanager/vlm-dcl-qc"
   },
   "files": [
     "dist"
@@ -59,15 +59,5 @@
     "node": ">=16.0.0",
     "npm": ">=8.0.0",
     "yarn": "please use npm"
-  },
-  "dependencies": {
-    "colyseus.js": "^0.15.14",
-    "whatwg-url-without-unicode": "^8.0.0-3",
-    "xmlhttprequest-polyfill": "^0.1.2"
-  },
-  "bundledDependencies": [
-    "colyseus.js",
-    "whatwg-url-without-unicode",
-    "xmlhttprequest-polyfill"
-  ]
+  }
 }
