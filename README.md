@@ -18,7 +18,9 @@ Run `npm install vlm-dcl-qc@sdk7` from your project folder.
 ^ COPY THIS IMPORT TO THE TOP OF THE FILE ^
 
 
-## Images
+## Using QuickCreate
+
+### Images
 
 -- Adding an image with Image() --
 - `path` is the URL of your image
@@ -35,7 +37,7 @@ new QuickCreate.Image({
 ```
 •·························•························•
 
-## Video Screens
+### Video Screens
 
 -- Adding a dynamic video screen with Video() --
 - `liveUrl` will be used when the stream is live.
@@ -54,7 +56,7 @@ new QuickCreate.VideoScreen({
 ```
 •·························•························•
 
-## 3D Models
+### 3D Models
 
 -- Adding a GLB with Mesh() --
 - By default, looks within the /models folder for the GLB. 
@@ -69,7 +71,7 @@ new QuickCreate.Mesh({
 ```
 •·························•························•
 
-## Auto-Dance Area
+### Auto-Dance Area
 
 -- Adding an auto-dance area with DanceFloor() --
 - Sets up a cube where people will dance when their feet are inside it.
