@@ -1,7 +1,9 @@
 # QuickCreate by VirtualLandManager                                       
                                                                                              
-COPY THIS IMPORT TO THE TOP OF THE FILE TO USE QUICKCREATOR vvvv
-`import QuickCreate from 'vlm-dcl-qc'`
+
+```import QuickCreate from 'vlm-dcl-qc'```
+
+COPY THIS IMPORT TO THE TOP OF THE FILE TO USE QUICKCREATOR
 
 
 ## Images
