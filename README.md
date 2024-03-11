@@ -1,9 +1,21 @@
 # QuickCreate by VirtualLandManager                                       
-                                                                                             
+
+## Installation
+
+### Step 1: Install VLM QuickCreate Dependency
+*Using VS Code Extension (Beginner):*
+1. Hit the + button in top right of the Dependencies panel.*
+2. When asked, "Is this a Decentraland library?" choose Yes.
+3. Type `vlm-dcl-qc@sdk7` and press Enter/Return
+
+*Via CLI (Advanced Option)*
+Run `npm install vlm-dcl-qc@sdk7` from your project folder.
+
+### Step 2: Import QuickCreate into your file
 
 ```import QuickCreate from 'vlm-dcl-qc'```
 
-COPY THIS IMPORT TO THE TOP OF THE FILE TO USE QUICKCREATOR
+^ COPY THIS IMPORT TO THE TOP OF THE FILE ^
 
 
 ## Images
