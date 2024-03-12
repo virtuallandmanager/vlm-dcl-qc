@@ -3,6 +3,7 @@
 ## Installation
 
 ### Step 1: Install VLM QuickCreate Dependency
+
 *Using VS Code Extension (Beginner):*
 1. Hit the + button in top right of the Dependencies panel.
 2. When asked, "Is this a Decentraland library?" choose Yes.
@@ -16,7 +17,6 @@ Run `npm install vlm-dcl-qc@sdk7` from your project folder.
 ```import QuickCreate from 'vlm-dcl-qc'```
 
 ^ COPY THIS IMPORT TO THE TOP OF THE FILE ^
-
 
 ## Using QuickCreate
 
