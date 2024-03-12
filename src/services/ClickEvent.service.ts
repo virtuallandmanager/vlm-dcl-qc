@@ -3,7 +3,6 @@ import { VLMClickEvent } from '../components/VLMClickEvent.component'
 import { movePlayerTo, openExternalUrl } from '~system/RestrictedActions'
 import { Vector3 } from '@dcl/sdk/math'
 import { requestTeleport } from '~system/UserActionModule'
-import { VLMEventManager } from '../logic/VLMSystemEvents.logic'
 import { ecs } from '../environment'
 import { getSoundPath } from '../shared/paths'
 import { VLMDebug } from '../logic/VLMDebug.logic'
@@ -103,7 +102,6 @@ export class ClickEventService {
       },
       (event: PBPointerEventsResult) => {
         this.functions[entity](event)
-        this.trackClickEvent(clickEvent, clickEvent.trackingId)
       },
     )
   }
@@ -153,14 +151,5 @@ export class ClickEventService {
     this.entities.forEach((entity: Entity) => {
       this.set(entity, options)
     })
-  }
-
-  trackClickEvent: CallableFunction = (clickEvent: VLMClickEvent.Config, id?: string) => {
-    const trackingId = clickEvent.trackingId || id
-
-    VLMDebug.log('Tracking Click Event', trackingId)
-    if (trackingId && clickEvent.hasTracking) {
-      VLMEventManager.events.emit('VLMSessionAction', trackingId)
-    }
   }
 }

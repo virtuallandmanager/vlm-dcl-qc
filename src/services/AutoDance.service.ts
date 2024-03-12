@@ -5,7 +5,6 @@ import { VLMQuaternion } from '../shared/maths'
 import { TriggeredEmote } from '../shared/interfaces'
 import { triggerEmote, triggerSceneEmote } from '~system/RestrictedActions'
 import { VLMDebug } from '../logic/VLMDebug.logic'
-import { VLMEventListeners } from '../logic/VLMSystemListeners.logic'
 
 export class AutoDanceService {
   static userEnabled = false
@@ -73,7 +72,7 @@ export class AutoDanceService {
     if (!nextEmote) {
       return
     }
-    VLMEventListeners.ignoreNextEmote = true
+
     if (nextEmote.isCustom) {
       triggerSceneEmote({ src: nextEmote.emote, loop: nextEmote.loop })
     } else {

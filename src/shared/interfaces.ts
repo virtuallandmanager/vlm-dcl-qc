@@ -1,11 +1,5 @@
-///<reference lib="es2015.symbol" />
-///<reference lib="es2015.symbol.wellknown" />
-///<reference lib="es2015.collection" />
-///<reference lib="es2015.iterable" />
 import { Entity } from '@dcl/sdk/ecs'
 import { Vector3 } from '@dcl/sdk/math'
-import { Room, Client } from 'colyseus.js'
-import { EndpointSettings } from 'colyseus.js/lib/Client'
 import { VLMClickEvent } from '../components/VLMClickEvent.component'
 
 // integration interfaces - these define properties and methods that are used by this package
@@ -204,18 +198,4 @@ export enum StreamState {
 export enum TextureType {
   BASIC = 'basic',
   ADVANCED = 'pbr',
-}
-
-// colyseus extensions
-
-export class ColyseusClient extends Client {
-  constructor(url: string | EndpointSettings) {
-    super(url)
-  }
-}
-
-export class ColyseusRoom extends Room {
-  constructor(name: string) {
-    super(name)
-  }
 }
